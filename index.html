@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TashTravel — Туристическое агентство в Ташкенте</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Прелоадер -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="plane-icon"><i class="fas fa-plane"></i></div>
+            <p>TashTravel</p>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>Tash<strong>Travel</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#destinations">Направления</a></li>
+                <li><a href="#tours">Туры</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <a href="tel:+998901234567" class="nav-phone">
+                <i class="fas fa-phone"></i> +998 90 123 45 67
+            </a>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=1920&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Лучшее турагентство Ташкента 2025
+            </div>
+            <h1>Откройте мир<br><span class="gradient-text">вместе с нами</span></h1>
+            <p class="hero-subtitle">Незабываемые путешествия из Ташкента по всему миру. Мы создаём впечатления, которые остаются на всю жизнь.</p>
+            <div class="hero-buttons">
+                <a href="#tours" class="btn btn-primary">
+                    <span>Выбрать тур</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Узнать больше</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15000">0</span>+
+                    <span class="stat-label">Довольных клиентов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>+
+                    <span class="stat-label">Стран мира</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Лет опыта</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#destinations"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+
+
+    <!-- Популярные направления -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-compass"></i> Популярные направления</span>
+                <h2>Куда отправиться из <span class="gradient-text">Ташкента?</span></h2>
+                <p>Выберите одно из наших самых популярных туристических направлений</p>
+            </div>
+            <div class="dest-grid">
+                <div class="dest-card dest-large">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80" alt="Турция">
+                    <div class="dest-overlay">
+                        <span class="dest-tag">Хит продаж</span>
+                        <h3>Турция</h3>
+                        <p><i class="fas fa-plane"></i> от $480 / 7 ночей</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" alt="ОАЭ">
+                    <div class="dest-overlay">
+                        <span class="dest-tag">Популярно</span>
+                        <h3>ОАЭ</h3>
+                        <p><i class="fas fa-plane"></i> от $720 / 5 ночей</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&q=80" alt="Мальдивы">
+                    <div class="dest-overlay">
+                        <span class="dest-tag">Люкс</span>
+                        <h3>Мальдивы</h3>
+                        <p><i class="fas fa-plane"></i> от $1850 / 7 ночей</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&q=80" alt="Таиланд">
+                    <div class="dest-overlay">
+                        <span class="dest-tag">Экзотика</span>
+                        <h3>Таиланд</h3>
+                        <p><i class="fas fa-plane"></i> от $890 / 10 ночей</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=800&q=80" alt="Египет">
+                    <div class="dest-overlay">
+                        <span class="dest-tag">Классика</span>
+                        <h3>Египет</h3>
+                        <p><i class="fas fa-plane"></i> от $520 / 7 ночей</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="dest-card dest-large">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80" alt="Европа">
+                    <div class="dest-overlay">
+                        <span class="dest-tag">Премиум</span>
+                        <h3>Европа</h3>
+                        <p><i class="fas fa-plane"></i> от $1150 / 7 ночей</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Горячие туры -->
+    <section class="tours" id="tours">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-fire"></i> Горячие предложения</span>
+                <h2>Лучшие туры <span class="gradient-text">этого сезона</span></h2>
+                <p>Успейте забронировать по выгодной цене — количество мест ограничено!</p>
+            </div>
+            <div class="tours-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="beach">Пляжный</button>
+                <button class="filter-btn" data-filter="excursion">Экскурсионный</button>
+                <button class="filter-btn" data-filter="luxury">Люкс</button>
+                <button class="filter-btn" data-filter="family">Семейный</button>
+            </div>
+            <div class="tours-grid">
+                <!-- Тур 1 -->
+                <div class="tour-card" data-category="beach">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Анталья">
+                        <div class="tour-badge hot">-30%</div>
+                        <div class="tour-wishlist"><i class="far fa-heart"></i></div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 4.9</div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Анталья, Турция</div>
+                        <h3>Rixos Premium Belek 5*</h3>
+                        <div class="tour-features">
+                            <span><i class="fas fa-moon"></i> 7 ночей</span>
+                            <span><i class="fas fa-utensils"></i> All Inclusive</span>
+                            <span><i class="fas fa-plane"></i> Перелёт</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">
+                                <span class="old-price">$980</span>
+                                <span class="new-price">$685</span>
+                                <span class="per-person">/ чел.</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-small btn-book" data-tour="Rixos Premium Belek 5* — Анталья, Турция">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тур 2 -->
+                <div class="tour-card" data-category="luxury">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Дубай">
+                        <div class="tour-badge new">NEW</div>
+                        <div class="tour-wishlist"><i class="far fa-heart"></i></div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 5.0</div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Дубай, ОАЭ</div>
+                        <h3>Atlantis The Palm 5*</h3>
+                        <div class="tour-features">
+                            <span><i class="fas fa-moon"></i> 5 ночей</span>
+                            <span><i class="fas fa-utensils"></i> Полупансион</span>
+                            <span><i class="fas fa-plane"></i> Перелёт</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">
+                                <span class="new-price">$1 250</span>
+                                <span class="per-person">/ чел.</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-small btn-book" data-tour="Atlantis The Palm 5* — Дубай, ОАЭ">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тур 3 -->
+                <div class="tour-card" data-category="beach luxury">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80" alt="Мальдивы">
+                        <div class="tour-badge hot">-20%</div>
+                        <div class="tour-wishlist"><i class="far fa-heart"></i></div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 5.0</div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Мале, Мальдивы</div>
+                        <h3>Sun Siyam Iru Fushi 5*</h3>
+                        <div class="tour-features">
+                            <span><i class="fas fa-moon"></i> 7 ночей</span>
+                            <span><i class="fas fa-utensils"></i> All Inclusive</span>
+                            <span><i class="fas fa-plane"></i> Перелёт</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">
+                                <span class="old-price">$2 350</span>
+                                <span class="new-price">$1 880</span>
+                                <span class="per-person">/ чел.</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-small btn-book" data-tour="Sun Siyam Iru Fushi 5* — Мале, Мальдивы">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тур 4 -->
+                <div class="tour-card" data-category="excursion family">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80" alt="Италия">
+                        <div class="tour-badge new">NEW</div>
+                        <div class="tour-wishlist"><i class="far fa-heart"></i></div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 4.8</div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Рим, Италия</div>
+                        <h3>Гранд-тур по Италии</h3>
+                        <div class="tour-features">
+                            <span><i class="fas fa-moon"></i> 10 ночей</span>
+                            <span><i class="fas fa-utensils"></i> Завтрак</span>
+                            <span><i class="fas fa-plane"></i> Перелёт</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">
+                                <span class="new-price">$1 420</span>
+                                <span class="per-person">/ чел.</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-small btn-book" data-tour="Гранд-тур по Италии — Рим, Италия">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тур 5 -->
+                <div class="tour-card" data-category="beach family">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=600&q=80" alt="Шарм-эль-Шейх">
+                        <div class="tour-badge hot">-25%</div>
+                        <div class="tour-wishlist"><i class="far fa-heart"></i></div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 4.7</div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Шарм-эль-Шейх, Египет</div>
+                        <h3>Rixos Sharm El Sheikh 5*</h3>
+                        <div class="tour-features">
+                            <span><i class="fas fa-moon"></i> 7 ночей</span>
+                            <span><i class="fas fa-utensils"></i> All Inclusive</span>
+                            <span><i class="fas fa-plane"></i> Перелёт</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">
+                                <span class="old-price">$760</span>
+                                <span class="new-price">$570</span>
+                                <span class="per-person">/ чел.</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-small btn-book" data-tour="Rixos Sharm El Sheikh 5* — Шарм-эль-Шейх, Египет">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тур 6 -->
+                <div class="tour-card" data-category="beach">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=600&q=80" alt="Пхукет">
+                        <div class="tour-wishlist"><i class="far fa-heart"></i></div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 4.8</div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Пхукет, Таиланд</div>
+                        <h3>Pullman Phuket Arcadia 5*</h3>
+                        <div class="tour-features">
+                            <span><i class="fas fa-moon"></i> 10 ночей</span>
+                            <span><i class="fas fa-utensils"></i> Завтрак</span>
+                            <span><i class="fas fa-plane"></i> Перелёт</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">
+                                <span class="new-price">$935</span>
+                                <span class="per-person">/ чел.</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-small btn-book" data-tour="Pullman Phuket Arcadia 5* — Пхукет, Таиланд">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-award"></i> Почему мы</span>
+                <h2>Наши <span class="gradient-text">преимущества</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Надёжность</h3>
+                    <p>12 лет на рынке. Лицензированное агентство с безупречной репутацией</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Лучшие цены</h3>
+                    <p>Прямые контракты с отелями и авиакомпаниями — гарантия лучшей цены</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Мы на связи круглосуточно — до, во время и после вашего путешествия</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+                    <h3>Рассрочка 0%</h3>
+                    <p>Путешествуйте сейчас — платите комфортными частями без переплат</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-passport"></i></div>
+                    <h3>Визовая поддержка</h3>
+                    <p>Поможем оформить визу в любую страну мира быстро и без хлопот</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gift"></i></div>
+                    <h3>Бонусная программа</h3>
+                    <p>Накапливайте бонусы и получайте скидки на следующие путешествия</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="Путешествие">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80" alt="Приключение">
+                    </div>
+                    <div class="about-experience">
+                        <span class="exp-number">12</span>
+                        <span class="exp-text">лет опыта</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag"><i class="fas fa-info-circle"></i> О компании</span>
+                    <h2>Мы делаем путешествия <span class="gradient-text">доступными</span></h2>
+                    <p>TashTravel — ведущее туристическое агентство Ташкента, основанное в 2014 году. Мы специализируемся на организации незабываемых путешествий по всему миру.</p>
+                    <p>Наша команда профессионалов подберёт для вас идеальный тур, учитывая все ваши пожелания и бюджет. Мы работаем напрямую с лучшими отелями и авиакомпаниями мира.</p>
+                    <div class="about-highlights">
+                        <div class="highlight"><i class="fas fa-check-circle"></i><span>Индивидуальный подход</span></div>
+                        <div class="highlight"><i class="fas fa-check-circle"></i><span>Гарантия лучшей цены</span></div>
+                        <div class="highlight"><i class="fas fa-check-circle"></i><span>Полное сопровождение</span></div>
+                        <div class="highlight"><i class="fas fa-check-circle"></i><span>Страховка включена</span></div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Связаться с нами</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Спецпредложение баннер -->
+    <section class="cta-banner">
+        <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=1920&q=80')"></div>
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <h2>Раннее бронирование <span>лето 2026</span></h2>
+            <p>Забронируйте тур до 31 марта и получите скидку до <strong>40%</strong></p>
+            <div class="cta-timer">
+                <div class="timer-item">
+                    <span class="timer-number" id="days">00</span>
+                    <span class="timer-label">дней</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="hours">00</span>
+                    <span class="timer-label">часов</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="minutes">00</span>
+                    <span class="timer-label">минут</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="seconds">00</span>
+                    <span class="timer-label">секунд</span>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-large">
+                <span>Забронировать со скидкой</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-comments"></i> Отзывы</span>
+                <h2>Что говорят наши <span class="gradient-text">клиенты</span></h2>
+            </div>
+            <div class="reviews-slider">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Потрясающий отдых в Турции! TashTravel организовали всё на высшем уровне — от трансфера до экскурсий. Отель был шикарный! Обязательно обратимся снова."</p>
+                        <div class="review-author">
+                            <div>
+                                <strong>Диана Каримова</strong>
+                                <span>Турция, июль 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Мальдивы мечты! Спасибо TashTravel за невероятный медовый месяц. Виллу на воде подобрали идеально. Сервис на высоте от начала и до конца."</p>
+                        <div class="review-author">
+                            <div>
+                                <strong>Алишер и Нилуфар</strong>
+                                <span>Мальдивы, сентябрь 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Ездили с семьёй в Дубай — дети в восторге! Аквапарк, сафари, шопинг — всё было продумано. Рассрочка 0% — очень удобно. Рекомендую всем!"</p>
+                        <div class="review-author">
+                            <div>
+                                <strong>Малика Рахимова</strong>
+                                <span>ОАЭ, декабрь 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-nav">
+                    <button class="rev-btn" id="prevReview"><i class="fas fa-chevron-left"></i></button>
+                    <div class="reviews-dots" id="reviewsDots"></div>
+                    <button class="rev-btn" id="nextReview"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Инстаграм лента -->
+    <section class="instagram">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fab fa-instagram"></i> Мы в Instagram</span>
+                <h2>Вдохновляйтесь <span class="gradient-text">нашими поездками</span></h2>
+                <p>Подписывайтесь: <a href="#" class="insta-link">@tashtravel.uz</a></p>
+            </div>
+        </div>
+        <div class="insta-grid">
+            <a href="#" class="insta-item">
+                <img src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=400&q=80" alt="Instagram">
+                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&q=80" alt="Instagram">
+                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?w=400&q=80" alt="Instagram">
+                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&q=80" alt="Instagram">
+                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&q=80" alt="Instagram">
+                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&q=80" alt="Instagram">
+                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag"><i class="fas fa-envelope"></i> Свяжитесь с нами</span>
+                    <h2>Готовы к <span class="gradient-text">путешествию?</span></h2>
+                    <p>Оставьте заявку и наш менеджер свяжется с вами в течение 15 минут</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Адрес</strong>
+                                <p>г. Ташкент, ул. Амира Темура, 42</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong>Телефон</strong>
+                                <p>+998 90 123 45 67</p>
+                                <p>+998 71 234 56 78</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@tashtravel.uz</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Режим работы</strong>
+                                <p>Пн-Сб: 9:00 — 19:00</p>
+                                <p>Вс: 10:00 — 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Оставить заявку</h3>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" placeholder="Ваше имя" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-field">
+                                <input type="tel" placeholder="+998 __ ___ __ __" required>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" placeholder="Email (необязательно)">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-field">
+                            <select>
+                                <option>Куда хотите поехать?</option>
+                                <option>Турция</option>
+                                <option>ОАЭ</option>
+                                <option>Мальдивы</option>
+                                <option>Таиланд</option>
+                                <option>Египет</option>
+                                <option>Европа</option>
+                                <option>Другое направление</option>
+                            </select>
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="form-field">
+                            <textarea placeholder="Расскажите о ваших пожеланиях..." rows="4"></textarea>
+                            <i class="fas fa-comment" style="top: 18px;"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Отправить заявку</span>
+                        </button>
+                        <p class="form-note"><i class="fas fa-lock"></i> Ваши данные в безопасности. Мы не передаём их третьим лицам.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5234567890!2d69.2787!3d41.3111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE4JzQwLjAiTiA2OcKwMTYnNDMuMyJF!5e0!3m2!1sru!2s!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>Tash<strong>Travel</strong></span>
+                    </a>
+                    <p>Ваш надёжный партнёр в мире путешествий. Мы открываем двери в лучшие уголки планеты с 2014 года.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Направления</h4>
+                    <ul>
+                        <li><a href="#">Турция</a></li>
+                        <li><a href="#">ОАЭ</a></li>
+                        <li><a href="#">Мальдивы</a></li>
+                        <li><a href="#">Таиланд</a></li>
+                        <li><a href="#">Египет</a></li>
+                        <li><a href="#">Европа</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Условия оплаты</a></li>
+                        <li><a href="#">Рассрочка</a></li>
+                        <li><a href="#">Страхование</a></li>
+                        <li><a href="#">Визовая поддержка</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ташкент, ул. Амира Темура, 42</p>
+                    <p><i class="fas fa-phone-alt"></i> +998 90 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@tashtravel.uz</p>
+                    <div class="footer-badges">
+                        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+                        <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard">
+                        <img src="https://img.icons8.com/color/48/payme.png" alt="Payme">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TashTravel. Все права защищены. Лицензия №T-0142</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Публичная оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Полноэкранная анимация успеха -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-content">
+            <div class="success-circle">
+                <svg class="success-checkmark" viewBox="0 0 52 52">
+                    <circle class="success-checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="success-checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h2>Заявка отправлена!</h2>
+            <p>Наш менеджер свяжется с вами<br>в течение 15 минут</p>
+            <div class="success-confetti" id="successConfetti"></div>
+        </div>
+    </div>
+
+    <!-- Модальное окно бронирования -->
+    <div class="booking-modal-overlay" id="bookingModal">
+        <div class="booking-modal">
+            <button class="booking-modal-close" id="bookingClose"><i class="fas fa-times"></i></button>
+            <div class="booking-modal-header">
+                <i class="fas fa-suitcase-rolling"></i>
+                <h3>Бронирование тура</h3>
+                <p class="booking-tour-name" id="bookingTourName"></p>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="booking-form-row">
+                    <div class="booking-field">
+                        <label><i class="fas fa-user"></i> Ваше имя *</label>
+                        <input type="text" placeholder="Введите имя" required>
+                    </div>
+                    <div class="booking-field">
+                        <label><i class="fas fa-user"></i> Фамилия *</label>
+                        <input type="text" placeholder="Введите фамилию" required>
+                    </div>
+                </div>
+                <div class="booking-form-row">
+                    <div class="booking-field">
+                        <label><i class="fas fa-phone"></i> Телефон *</label>
+                        <input type="tel" placeholder="+998 __ ___ __ __" required>
+                    </div>
+                    <div class="booking-field">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" placeholder="example@mail.com">
+                    </div>
+                </div>
+                <div class="booking-form-row">
+                    <div class="booking-field">
+                        <label><i class="fas fa-users"></i> Кол-во гостей *</label>
+                        <select required>
+                            <option value="">Выберите</option>
+                            <option>1 взрослый</option>
+                            <option>2 взрослых</option>
+                            <option>2 взрослых + 1 ребёнок</option>
+                            <option>2 взрослых + 2 ребёнка</option>
+                            <option>Семья (3+ чел.)</option>
+                        </select>
+                    </div>
+                    <div class="booking-field">
+                        <label><i class="fas fa-calendar-alt"></i> Желаемая дата *</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="booking-field">
+                    <label><i class="fas fa-passport"></i> Номер паспорта</label>
+                    <input type="text" placeholder="AA 1234567">
+                </div>
+                <div class="booking-field">
+                    <label><i class="fas fa-comment"></i> Пожелания</label>
+                    <textarea placeholder="Ваши пожелания или вопросы..." rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Отправить заявку</span>
+                </button>
+                <p class="booking-form-note"><i class="fas fa-lock"></i> Ваши данные защищены и не передаются третьим лицам</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp кнопка -->
+    <a href="https://wa.me/998901234567" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
