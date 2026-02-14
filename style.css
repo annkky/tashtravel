@@ -725,7 +725,7 @@ img {
     border-radius: var(--radius-md);
     overflow: hidden;
     cursor: pointer;
-    group: true;
+    
 }
 
 .dest-card.dest-large {
