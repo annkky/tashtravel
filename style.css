@@ -450,9 +450,12 @@ img {
     color: var(--accent);
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+    margin-left: 4px;
     backdrop-filter: blur(10px);
     animation: fadeInDown 0.8s ease;
+    position: relative;
+    top: -10px;
 }
 
 .hero-badge i {
@@ -1912,17 +1915,17 @@ img {
 /* === WhatsApp Button === */
 .whatsapp-btn {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: 60px;
-    height: 60px;
+    bottom: 100px;
+    left: 24px;
+    width: 56px;
+    height: 56px;
     background: #25D366;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     z-index: 999;
     box-shadow: 0 4px 20px rgba(37,211,102,0.4);
     transition: var(--transition);
