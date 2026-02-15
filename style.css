@@ -1915,8 +1915,8 @@ img {
 /* === WhatsApp Button === */
 .whatsapp-btn {
     position: fixed;
-    bottom: 100px;
-    left: 24px;
+    bottom: 95px;
+    right: 30px;
     width: 56px;
     height: 56px;
     background: #25D366;
